@@ -1,0 +1,112 @@
+<!DOCTYPE html><html class="login-pf"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign in to Management</title>
+    <link rel="icon" href="/resources/74wcl/login/keycloak/img/favicon.ico">
+            <link href="/resources/74wcl/common/keycloak/node_modules/@patternfly/patternfly/patternfly.min.css" rel="stylesheet">
+            <link href="/resources/74wcl/common/keycloak/node_modules/patternfly/dist/css/patternfly.min.css" rel="stylesheet">
+            <link href="/resources/74wcl/common/keycloak/node_modules/patternfly/dist/css/patternfly-additions.min.css" rel="stylesheet">
+            <link href="/resources/74wcl/common/keycloak/lib/pficon/pficon.css" rel="stylesheet">
+            <link href="/resources/74wcl/login/keycloak/css/login.css" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "rfc4648": "/resources/74wcl/common/keycloak/node_modules/rfc4648/lib/rfc4648.js"
+            }
+        }
+    </script>
+    <script src="/resources/74wcl/login/keycloak/js/menu-button-links.js" type="module"></script>
+    <script type="module">
+        import { checkCookiesAndSetTimer } from "/resources/74wcl/login/keycloak/js/authChecker.js";
+
+        checkCookiesAndSetTimer(
+          "/realms/Management/login-actions/restart?client_id=SelfOrder&tab_id=3RkRnP8n4Uc&client_data=eyJydSI6Imh0dHBzOi8vYm8tZGV4b3JkZXItcWEuZGV4bWFuYWdlci5jb20vZGFzaGJvYXJkIiwicnQiOiJjb2RlIiwicm0iOiJmcmFnbWVudCIsInN0IjoiY2YxNmIwZmYtOTk4OC00OGY5LWFmM2ItNjcxMTIwYTY1YjdiIn0&skip_logout=true"
+        );
+    </script>
+<script> if (typeof history.replaceState === 'function') {  history.replaceState({}, "some title", "https://keycloack-dexorder-qa.dexmanager.com/realms/Management/login-actions/authenticate?execution=a56c8ea1-2842-4742-abaa-2c566373531d&client_id=SelfOrder&tab_id=3RkRnP8n4Uc&client_data=eyJydSI6Imh0dHBzOi8vYm8tZGV4b3JkZXItcWEuZGV4bWFuYWdlci5jb20vZGFzaGJvYXJkIiwicnQiOiJjb2RlIiwicm0iOiJmcmFnbWVudCIsInN0IjoiY2YxNmIwZmYtOTk4OC00OGY5LWFmM2ItNjcxMTIwYTY1YjdiIn0"); }</script></head>
+
+<body class="">
+<div class="login-pf-page">
+    <div id="kc-header" class="login-pf-page-header">
+        <div id="kc-header-wrapper" class="">Management</div>
+    </div>
+    <div class="card-pf">
+        <header class="login-pf-header">
+                <h1 id="kc-page-title">        Sign in to your account
+
+</h1>
+      </header>
+      <div id="kc-content">
+        <div id="kc-content-wrapper">
+
+
+        <div id="kc-form">
+          <div id="kc-form-wrapper">
+                <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="https://keycloack-dexorder-qa.dexmanager.com/realms/Management/login-actions/authenticate?session_code=hu2dBD2pfhVNKcYymhJgCG2sB8fUAjE1DDxBROPa7lA&amp;execution=a56c8ea1-2842-4742-abaa-2c566373531d&amp;client_id=SelfOrder&amp;tab_id=3RkRnP8n4Uc&amp;client_data=eyJydSI6Imh0dHBzOi8vYm8tZGV4b3JkZXItcWEuZGV4bWFuYWdlci5jb20vZGFzaGJvYXJkIiwicnQiOiJjb2RlIiwicm0iOiJmcmFnbWVudCIsInN0IjoiY2YxNmIwZmYtOTk4OC00OGY5LWFmM2ItNjcxMTIwYTY1YjdiIn0" method="post">
+                        <div class="form-group">
+                            <label for="username" class="pf-c-form__label pf-c-form__label-text">Email</label>
+
+                            <input tabindex="2" id="username" class="pf-c-form-control" name="username" value="error@error.com" type="text" autofocus="" autocomplete="username" aria-invalid="true">
+
+                                <span id="input-error" class="pf-c-form__helper-text pf-m-error required kc-feedback-text" aria-live="polite">
+                                        Invalid username or password.
+                                </span>
+
+                        </div>
+
+                    <div class="form-group">
+                        <label for="password" class="pf-c-form__label pf-c-form__label-text">Password</label>
+
+                        <div class="pf-c-input-group">
+                            <input tabindex="3" id="password" class="pf-c-form-control" name="password" type="password" autocomplete="current-password" aria-invalid="true">
+                            <button class="pf-c-button pf-m-control" type="button" aria-label="Show password" aria-controls="password" data-password-toggle="" tabindex="4" data-icon-show="fa fa-eye" data-icon-hide="fa fa-eye-slash" data-label-show="Show password" data-label-hide="Hide password">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group login-pf-settings">
+                        <div id="kc-form-options">
+                            </div>
+                            <div class="">
+                                    <span><a tabindex="6" href="/realms/Management/login-actions/reset-credentials?client_id=SelfOrder&amp;tab_id=3RkRnP8n4Uc&amp;client_data=eyJydSI6Imh0dHBzOi8vYm8tZGV4b3JkZXItcWEuZGV4bWFuYWdlci5jb20vZGFzaGJvYXJkIiwicnQiOiJjb2RlIiwicm0iOiJmcmFnbWVudCIsInN0IjoiY2YxNmIwZmYtOTk4OC00OGY5LWFmM2ItNjcxMTIwYTY1YjdiIn0">Forgot Password?</a></span>
+                            </div>
+
+                      </div>
+
+                      <div id="kc-form-buttons" class="form-group">
+                          <input type="hidden" id="id-hidden-input" name="credentialId">
+                          <input tabindex="7" class="pf-c-button pf-m-primary pf-m-block btn-lg" name="login" id="kc-login" type="submit" value="Sign In">
+                      </div>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="/resources/74wcl/login/keycloak/js/passwordVisibility.js"></script>
+
+
+
+
+
+              <div id="kc-info" class="login-pf-signup">
+                  <div id="kc-info-wrapper" class="">
+            <div id="kc-registration-container">
+                <div id="kc-registration">
+                    <span>New user? <a tabindex="8" href="/realms/Management/login-actions/registration?client_id=SelfOrder&amp;tab_id=3RkRnP8n4Uc&amp;client_data=eyJydSI6Imh0dHBzOi8vYm8tZGV4b3JkZXItcWEuZGV4bWFuYWdlci5jb20vZGFzaGJvYXJkIiwicnQiOiJjb2RlIiwicm0iOiJmcmFnbWVudCIsInN0IjoiY2YxNmIwZmYtOTk4OC00OGY5LWFmM2ItNjcxMTIwYTY1YjdiIn0">Register</a></span>
+                </div>
+            </div>
+
+                  </div>
+              </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body></html>
