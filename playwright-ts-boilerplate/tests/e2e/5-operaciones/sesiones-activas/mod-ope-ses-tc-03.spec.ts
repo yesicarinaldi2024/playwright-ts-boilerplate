@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-OPE-SES-TC-03 | Reacción a Sesiones Fallidas (Timeout Inactivo Status Tag)', () => {
+/**
+ * Objetivo: Chequeo integral semántico del manual: Timeout por inactividad debe predecirse como tag alertada en la celda Status.
+ */
+test.describe('MOD-OPE-SES-TC-03 | Reacción a Sesiones Fallidas ("Timeout" Inactivo Status Tag)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

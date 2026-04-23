@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Cumplir requisitos de Accesibilidad.
+ */
 test.describe('MOD-MED-ARCH-TC-05 | Edición Metadatos Aditivos (Description / Alt)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

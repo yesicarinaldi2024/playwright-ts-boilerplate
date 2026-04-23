@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-MET-TC-02', () => {
+/**
+ * Objetivo: El UI debe contemplar fallos del network devolviendo estados vacíos sanos (Skeletons).
+ */
+test.describe('MOD-DASH-MET-TC-02 | Falla de Carga Simulada de Métricas (HTTP Delay)', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

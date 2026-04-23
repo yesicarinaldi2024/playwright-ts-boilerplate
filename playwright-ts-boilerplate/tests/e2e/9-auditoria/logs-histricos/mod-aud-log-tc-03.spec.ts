@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-AUD-LOG-TC-03 | Aislamiento Temporal DatePicker Desde > Hasta', () => {
+/**
+ * Objetivo: Comprimir data devuelta para no trancar Navegador del Owner.
+ */
+test.describe('MOD-AUD-LOG-TC-03 | Aislamiento Temporal DatePicker "Desde > Hasta"', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

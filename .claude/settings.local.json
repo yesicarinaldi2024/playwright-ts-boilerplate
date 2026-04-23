@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx playwright *)",
+      "Bash(grep -n \"crearSucursal\" /c/bo_so/playwright-ts-boilerplate/playwright-ts-boilerplate/tests/e2e/2-organizacion/2-sucursales/*.spec.ts)",
+      "Bash(npm test *)",
+      "Bash(cd c:\\\\\\\\bo_so\\\\\\\\playwright-ts-boilerplate\\\\\\\\playwright-ts-boilerplate)",
+      "Bash(npm run *)",
+      "Bash(ls -lh SCRIPTS*.md)",
+      "Bash(wc -l SCRIPTS*.md)",
+      "Bash(tee ../test-results-tc06.log)",
+      "Bash(tail -f C:\\\\\\\\Users\\\\\\\\YESICA\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--bo-so-playwright-ts-boilerplate\\\\\\\\1ff33f6e-a5e2-4c42-a00a-9fa77192f834\\\\\\\\tasks\\\\\\\\b7jxts7k5.output)",
+      "Bash(grep -q \"passed\\\\|failed\" C:\\\\\\\\Users\\\\\\\\YESICA\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--bo-so-playwright-ts-boilerplate\\\\\\\\1ff33f6e-a5e2-4c42-a00a-9fa77192f834\\\\\\\\tasks\\\\\\\\b7jxts7k5.output)",
+      "Bash(tail -50 C:\\\\\\\\Users\\\\\\\\YESICA\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--bo-so-playwright-ts-boilerplate\\\\\\\\1ff33f6e-a5e2-4c42-a00a-9fa77192f834\\\\\\\\tasks\\\\\\\\b7jxts7k5.output)",
+      "Bash(tail -20 C:\\\\\\\\Users\\\\\\\\YESICA\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--bo-so-playwright-ts-boilerplate\\\\\\\\1ff33f6e-a5e2-4c42-a00a-9fa77192f834\\\\\\\\tasks\\\\\\\\b7jxts7k5.output)",
+      "Bash(tail -5 C:\\\\\\\\Users\\\\\\\\YESICA\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--bo-so-playwright-ts-boilerplate\\\\\\\\1ff33f6e-a5e2-4c42-a00a-9fa77192f834\\\\\\\\tasks\\\\\\\\bjdt154mm.output)",
+      "Bash(tee test-kioscos-run.log)",
+      "Bash(tee test-run-tc08.log)",
+      "Bash(tee test-run-tc08-v2.log)"
+    ]
+  }
+}

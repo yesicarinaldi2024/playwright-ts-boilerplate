@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Acoplamiento css per-tenant.
+ */
 test.describe('MOD-TEM-VIS-TC-03 | Modificación Paramétrica Colores Hexadecimales (Header)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

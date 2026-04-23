@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-AUD-LOG-TC-04 | Parametrización Búsqueda Filter Type DELETE Exclusivo', () => {
+/**
+ * Objetivo: Filtrar logs destructivos.
+ */
+test.describe('MOD-AUD-LOG-TC-04 | Parametrización Búsqueda Filter Type "DELETE" Exclusivo', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

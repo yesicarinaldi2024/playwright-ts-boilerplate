@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-TEM-ASIG-TC-03 | Quiebre de Herencia Visual (Sobreescritura Local Sucursal)', () => {
+/**
+ * Objetivo: Validación Expresa Pag 60 manual "Aplicar un tema especial a un Kiosco o Sucursal Divergente".
+ */
+test.describe('MOD-TEM-ASIG-TC-03 | Quiebre de Herencia Visual ("Sobreescritura Local Sucursal")', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

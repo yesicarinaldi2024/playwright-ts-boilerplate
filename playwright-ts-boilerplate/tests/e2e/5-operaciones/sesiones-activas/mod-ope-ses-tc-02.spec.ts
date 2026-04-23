@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Recuperación del track exacto de usuario de ATM.
+ */
 test.describe('MOD-OPE-SES-TC-02 | Filtrado Exitoso Univalente de Hash Identifier', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

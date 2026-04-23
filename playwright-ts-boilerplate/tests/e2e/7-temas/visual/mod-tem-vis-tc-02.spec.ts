@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Restricción obligatoria según docs manual.
+ */
 test.describe('MOD-TEM-VIS-TC-02 | Falla de Carga de Tema Carente de Identidad (Sin Nombre)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

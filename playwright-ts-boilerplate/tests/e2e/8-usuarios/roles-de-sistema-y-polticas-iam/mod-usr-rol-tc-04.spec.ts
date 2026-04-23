@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Comprobar remoción y sus dependencias.
+ */
 test.describe('MOD-USR-ROL-TC-04 | Destrucción Política ROL Pre Existente (Lógica Cascada)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

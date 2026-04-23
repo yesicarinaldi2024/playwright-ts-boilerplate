@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Emitir Blob download técnico de orden.
+ */
 test.describe('MOD-OPE-ORD-TC-04 | Extracción Ciega por Archivo (Descargar Json Orden Pura)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

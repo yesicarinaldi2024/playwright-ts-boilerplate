@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-FILT-TC-02', () => {
+/**
+ * Objetivo: DatePicker reacciona correctamente a inserciones custom.
+ */
+test.describe('MOD-DASH-FILT-TC-02 | Set de Calendario Personalizado', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

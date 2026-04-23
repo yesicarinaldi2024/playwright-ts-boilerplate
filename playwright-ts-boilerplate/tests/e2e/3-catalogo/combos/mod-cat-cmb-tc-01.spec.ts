@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Consolidar una asociación unitaria compuesta de múltiples Skus.
+ */
 test.describe('MOD-CAT-CMB-TC-01 | Alta de Combo Estructurado (CLÁSICO)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

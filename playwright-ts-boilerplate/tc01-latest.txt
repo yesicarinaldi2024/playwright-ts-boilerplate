@@ -1,0 +1,104 @@
+
+Running 1 test using 1 worker
+
+[1A[2K
+<--- Last few GCs --->
+
+[3144:00000234B6631000]     4285 ms: Scavenge 16.9 (21.8) -> 15.1 (23.3) MB, pooled: 0 MB, 70.04 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[3144:00000234B6631000]     5270 ms: Scavenge 18.9 (23.6) -> 17.0 (32.6) MB, pooled: 0 MB, 5.58 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[3144:00000234B6631000]     7448 ms: Scavenge 25.2 (34.1) -> 20.7 (35.3) MB, pooled: 0 MB, 15.79 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+
+
+
+[1A[2K
+<--- JS stacktrace --->
+
+FATAL ERROR: NewSpace::EnsureCurrentCapacity Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+
+
+[1A[2K 1: 00007FF6637C7487 
+ 2: 00007FF66372B1B8 
+ 3: 00007FF66429C011 
+ 4: 00007FF664288B96 
+ 5: 00007FF6640E54E0 
+ 6: 00007FF6640C2260 
+ 7: 00007FF6640EC17B 
+ 8: 00007FF6640EE78E 
+ 9: 00007FF6640DE5AD 
+10: 00007FF6640DA165 
+
+
+[1A[2K11: 00007FF663A63DCD 
+
+
+[1A[2K[1/1] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico
+[1A[2K
+
+#
+# Fatal process out of memory: Zone
+#
+----- Native stack trace -----
+
+
+
+[1A[2K[2/1] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico (retry #1)
+[1A[2K[chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico
+ 1: 00007FF6637C7487 
+ 2: 00007FF66369CA6F 
+ 3: 00007FF664901DE6 
+ 4: 00007FF6642889A1 
+ 5: 00007FF663D6B6BB 
+ 6: 00007FF663AD978C 
+
+
+[1A[2K 7: 00007FF664A09D37 
+ 8: 00007FF6649AB150 
+ 9: 00007FF664B26204 
+10: 00007FF664B2A86F 
+11: 00007FF664B299E5 
+12: 00007FF664B326D1 
+13: 00007FF664B2923F 
+14: 00007FF664A513F7 
+15: 00007FF664A23BD1 
+16: 00007FF664A50FE8 
+17: 00007FF664A5179E 
+18: 00007FF664A51482 
+19: 00007FF664A249CF 
+20: 00007FF664A1B645 
+21: 00007FF664A1C215 
+22: 00007FF664205CD4 
+23: 00007FF6641CC8B2 
+24: 00007FF66448D7D6 
+25: 00007FF66369F7F0 
+26: 00007FF663828593 
+27: 00007FF665016D9B 
+28: 00007FFF58207374 
+29: 00007FFF58D9CC91 
+
+
+[1A[2K  1) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico 
+
+    Error: worker process exited unexpectedly (code=134, signal=null)
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: worker process exited unexpectedly (code=2147483651, signal=null)
+
+
+Convirtiendo evidencia: page@00e9be487ba4301ab97a5199ecb65fcd.webm -> .mp4
+Error convirtiendo page@00e9be487ba4301ab97a5199ecb65fcd.webm: Error: ffmpeg exited with code 3199971767: Error opening input file c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-6\page@00e9be487ba4301ab97a5199ecb65fcd.webm.
+Error opening input files: Invalid data found when processing input
+
+    at ChildProcess.<anonymous> (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\node_modules\fluent-ffmpeg\lib\processor.js:180:22)
+    at ChildProcess.emit (node:events:519:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:293:12)
+Error durante la fase de post-procesamiento de videos: Error: ffmpeg exited with code 3199971767: Error opening input file c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-6\page@00e9be487ba4301ab97a5199ecb65fcd.webm.
+Error opening input files: Invalid data found when processing input
+
+    at ChildProcess.<anonymous> (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\node_modules\fluent-ffmpeg\lib\processor.js:180:22)
+    at ChildProcess.emit (node:events:519:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[1A[2K  1 failed
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico 

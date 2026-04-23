@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Render Virtual Grids eficaces.
+ */
 test.describe('MOD-MED-ARCH-TC-09 | Filtrado Activo Búsqueda Selecta', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

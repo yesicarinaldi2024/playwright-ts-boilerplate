@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Uso reactivo.
+ */
 test.describe('MOD-USR-ROL-TC-05 | Visibilidad Barra Search Filtros por Nombre', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

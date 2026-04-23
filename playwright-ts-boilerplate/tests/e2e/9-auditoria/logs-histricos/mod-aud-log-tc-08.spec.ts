@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-AUD-LOG-TC-08 | Filtrado Estrecho Input Servicio Múltiple', () => {
+/**
+ * Objetivo: Comprobación lógica que soporta combinaciones lógicas de microservicios afectados.
+ */
+test.describe('MOD-AUD-LOG-TC-08 | Filtrado Estrecho Input "Servicio Múltiple"', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

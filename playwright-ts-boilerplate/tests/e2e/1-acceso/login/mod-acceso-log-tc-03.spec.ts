@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-ACCESO-LOG-TC-03', () => {
+/**
+ * Objetivo: Impedir fugas de acceso de agentes no reconocidos.
+ */
+test.describe('MOD-ACCESO-LOG-TC-03 | Intento de ingreso con usuario inexistente', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
   });

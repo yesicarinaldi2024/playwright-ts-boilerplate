@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-MET-TC-01', () => {
+/**
+ * Objetivo: Confirmar diseño íntegro descripto en el manual pág 5.
+ */
+test.describe('MOD-DASH-MET-TC-01 | Presencia de Tarjetones Principales Básicos (KPI Check)', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

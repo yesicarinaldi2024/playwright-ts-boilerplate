@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Abortar colisión Identity Hash.
+ */
 test.describe('MOD-USR-ABM-TC-02 | Intento Fallido Reuso de Hash (Correo Duplicado en Base Central)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

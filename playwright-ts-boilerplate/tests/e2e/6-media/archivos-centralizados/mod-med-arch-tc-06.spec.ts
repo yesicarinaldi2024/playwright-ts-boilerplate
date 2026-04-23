@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Prevenir reemplazos fantasmas en Producción de assets vitales.
+ */
 test.describe('MOD-MED-ARCH-TC-06 | Falla Colisión Conflicto de Nominación Identica', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-TEM-ASIG-TC-02 | Desactivación Total Flag Tema Activo', () => {
+/**
+ * Objetivo: Forzado de Default Global Base System App anulando costumizations.
+ */
+test.describe('MOD-TEM-ASIG-TC-02 | Desactivación Total Flag "Tema Activo"', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

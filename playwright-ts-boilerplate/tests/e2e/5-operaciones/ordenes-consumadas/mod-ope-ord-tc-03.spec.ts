@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-OPE-ORD-TC-03 | Visualización Integral de Instrucciones Especiales', () => {
+/**
+ * Objetivo: Atapar string descriptivo especial que deja un cliente final desde el Kiosco.
+ */
+test.describe('MOD-OPE-ORD-TC-03 | Visualización Integral de "Instrucciones Especiales"', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

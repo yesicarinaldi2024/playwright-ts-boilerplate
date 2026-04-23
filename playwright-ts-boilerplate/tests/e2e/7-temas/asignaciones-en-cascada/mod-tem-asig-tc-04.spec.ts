@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Resguardo Defensivo.
+ */
 test.describe('MOD-TEM-ASIG-TC-04 | Intento Restrictivo Cancelación Tema Unitario', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

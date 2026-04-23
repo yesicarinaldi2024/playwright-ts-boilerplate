@@ -1,0 +1,24 @@
+{
+  "texts": {
+    "dashboard": {
+      "headingNetSales": "Ventas Netas",
+      "metricHourly": "hora",
+      "headingTotalOrders": "Órdenes Totales"
+    },
+    "general": {
+      "buttonApply": "Aplicar",
+      "buttonClear": "Limpiar",
+      "loadingMessage": "Cargando..."
+    }
+  },
+  "urls": {
+    "dashboard": "/dashboard",
+    "login": "/login",
+    "catalog": "/catalog",
+    "operations": "/operations",
+    "media": "/media",
+    "themes": "/themes",
+    "users": "/users",
+    "audit": "/audit"
+  }
+}

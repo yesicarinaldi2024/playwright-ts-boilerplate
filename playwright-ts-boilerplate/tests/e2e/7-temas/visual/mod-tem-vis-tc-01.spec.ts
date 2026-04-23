@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Cuna de los esquemas WhiteLabel para el Kiosco.
+ */
 test.describe('MOD-TEM-VIS-TC-01 | Instanciación General Objeto Tema Base', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

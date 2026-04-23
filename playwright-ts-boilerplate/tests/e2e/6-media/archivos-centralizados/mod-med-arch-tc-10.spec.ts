@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Remover assets inútiles.
+ */
 test.describe('MOD-MED-ARCH-TC-10 | Destrucción Completa Física (Error Warning Evaluado)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Una actualización monetaria sobreescita impacta dinámicamente en vista.
+ */
 test.describe('MOD-PRE-PPR-TC-07 | Cambio Update Fila Grilla Automática General', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

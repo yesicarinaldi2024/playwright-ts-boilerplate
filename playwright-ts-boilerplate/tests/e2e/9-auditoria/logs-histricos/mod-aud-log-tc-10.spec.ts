@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Función operativa del Debugging técnico manual pág 69.
+ */
 test.describe('MOD-AUD-LOG-TC-10 | Aserción ClipBoard Native Copié Portapapeles (Copy JSON)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

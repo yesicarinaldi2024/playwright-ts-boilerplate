@@ -11,6 +11,10 @@ import { PaginaMedia } from '../../pages/PaginaMedia';
 import { PaginaTemas } from '../../pages/PaginaTemas';
 import { PaginaUsuarios } from '../../pages/PaginaUsuarios';
 import { PaginaAuditoria } from '../../pages/PaginaAuditoria';
+import { PaginaTenants } from '../../pages/PaginaTenants';
+import { PaginaSucursales } from '../../pages/PaginaSucursales';
+import { PaginaKioscos } from '../../pages/PaginaKioscos';
+import { PaginaGruposKioscos } from '../../pages/PaginaGruposKioscos';
 
 type FixturesArquitecturaTest = {
   paginaLogin: PaginaLogin;
@@ -25,6 +29,10 @@ type FixturesArquitecturaTest = {
   paginaTemas: PaginaTemas;
   paginaUsuarios: PaginaUsuarios;
   paginaAuditoria: PaginaAuditoria;
+  paginaTenants: PaginaTenants;
+  paginaSucursales: PaginaSucursales;
+  paginaKioscos: PaginaKioscos;
+  paginaGruposKioscos: PaginaGruposKioscos;
 };
 
 export const test = baseTest.extend<FixturesArquitecturaTest>({
@@ -40,6 +48,10 @@ export const test = baseTest.extend<FixturesArquitecturaTest>({
   paginaTemas: async ({ page }, use) => { await use(new PaginaTemas(page)); },
   paginaUsuarios: async ({ page }, use) => { await use(new PaginaUsuarios(page)); },
   paginaAuditoria: async ({ page }, use) => { await use(new PaginaAuditoria(page)); },
+  paginaTenants: async ({ page }, use) => { await use(new PaginaTenants(page)); },
+  paginaSucursales: async ({ page }, use) => { await use(new PaginaSucursales(page)); },
+  paginaKioscos: async ({ page }, use) => { await use(new PaginaKioscos(page)); },
+  paginaGruposKioscos: async ({ page }, use) => { await use(new PaginaGruposKioscos(page)); },
 });
 
 export { expect };

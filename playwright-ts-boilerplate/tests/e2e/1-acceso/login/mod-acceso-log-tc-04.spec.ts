@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-ACCESO-LOG-TC-04', () => {
+/**
+ * Objetivo: Asegurar validaciones Web-forms (HTML5 / Cliente) para evitar peticiones basura al servidor.
+ */
+test.describe('MOD-ACCESO-LOG-TC-04 | Comportamiento frente a campos obligatorios en Blanco', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
   });

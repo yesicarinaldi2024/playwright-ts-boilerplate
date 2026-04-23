@@ -1,0 +1,614 @@
+
+Running 12 tests using 1 worker
+
+[1A[2K[1/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico
+[1A[2K[2/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico (retry #1)
+[1A[2K  1) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:19:7
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-0\traces\a2548a3fe2b5d2b28a17-971a8c929b896cf23023.trace'
+
+    Error: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-0\af965eb35b939aa798f6a2b0128c6565.zip'
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-c802b-rear-un-nuevo-tenant-básico-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-c802b-rear-un-nuevo-tenant-básico-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:19:7
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-1\traces\a2548a3fe2b5d2b28a17-971a8c929b896cf23023-retry1.trace'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-c802b-rear-un-nuevo-tenant-básico-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-c802b-rear-un-nuevo-tenant-básico-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-c802b-rear-un-nuevo-tenant-básico-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-c802b-rear-un-nuevo-tenant-básico-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[3/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-02.spec.ts:12:7 › MOD-ORG-TEN-TC-02 | Bloqueo al guardar Tenant con campos obligatorios vacíos mandatorios › Validar cumplimiento funcional de MOD-ORG-TEN-TC-02
+[1A[2K[4/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-03.spec.ts:12:7 › MOD-ORG-TEN-TC-03 | Modificación de Pestaña Info en Tenant › Validar cumplimiento funcional de MOD-ORG-TEN-TC-03
+[1A[2K[5/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-03.spec.ts:12:7 › MOD-ORG-TEN-TC-03 | Modificación de Pestaña Info en Tenant › Validar cumplimiento funcional de MOD-ORG-TEN-TC-03 (retry #1)
+[1A[2K  2) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-03.spec.ts:12:7 › MOD-ORG-TEN-TC-03 | Modificación de Pestaña Info en Tenant › Validar cumplimiento funcional de MOD-ORG-TEN-TC-03 
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-2\traces\d1a7623d4843784effeb-c491e473791414034dd0-recording1.network'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium\test-finished-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-3\traces\d1a7623d4843784effeb-c491e473791414034dd0-retry1.network'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium-retry1\test-finished-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-01e1d-cional-de-MOD-ORG-TEN-TC-03-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[6/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-04.spec.ts:12:7 › MOD-ORG-TEN-TC-04 | Alternancia Métodos Pago Inicial (Efectivo y Clover) › Validar cumplimiento funcional de MOD-ORG-TEN-TC-04
+[1A[2K[7/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-04.spec.ts:12:7 › MOD-ORG-TEN-TC-04 | Alternancia Métodos Pago Inicial (Efectivo y Clover) › Validar cumplimiento funcional de MOD-ORG-TEN-TC-04 (retry #1)
+[1A[2K  3) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-04.spec.ts:12:7 › MOD-ORG-TEN-TC-04 | Alternancia Métodos Pago Inicial (Efectivo y Clover) › Validar cumplimiento funcional de MOD-ORG-TEN-TC-04 
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-4\traces\85c91817b82fa2af8a07-ace3ce7c845c73eaeaf8.network'
+
+    Error: ENOENT: no such file or directory, open 'c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\reports\test-results\.playwright-artifacts-4\d38513096059d45b2df130cb66523561.zip'
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-81405-cional-de-MOD-ORG-TEN-TC-04-chromium\test-finished-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-81405-cional-de-MOD-ORG-TEN-TC-04-chromium\error-context.md
+
+
+[1A[2K[8/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-05.spec.ts:12:7 › MOD-ORG-TEN-TC-05 | Inyección de Pantalla Espera Media (Pre-Menú) › Validar cumplimiento funcional de MOD-ORG-TEN-TC-05
+[1A[2K[9/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-06.spec.ts:14:7 › MOD-ORG-TEN-TC-06 | Intentar crear Tenant duplicado › Validar mensaje de error por duplicado en API y UI
+[1A[2K[10/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-06.spec.ts:14:7 › MOD-ORG-TEN-TC-06 | Intentar crear Tenant duplicado › Validar mensaje de error por duplicado en API y UI (retry #1)
+[1A[2K  4) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-06.spec.ts:14:7 › MOD-ORG-TEN-TC-06 | Intentar crear Tenant duplicado › Validar mensaje de error por duplicado en API y UI 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-06.spec.ts:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-06.spec.ts:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-bd3d9-r-por-duplicado-en-API-y-UI-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[11/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-07.spec.ts:14:7 › MOD-ORG-TEN-TC-07 | Modificar Tenant existente › Modificar nombre y estado del tenant TC-01
+[1A[2K[12/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-07.spec.ts:14:7 › MOD-ORG-TEN-TC-07 | Modificar Tenant existente › Modificar nombre y estado del tenant TC-01 (retry #1)
+[1A[2K  5) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-07.spec.ts:14:7 › MOD-ORG-TEN-TC-07 | Modificar Tenant existente › Modificar nombre y estado del tenant TC-01 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-07.spec.ts:19:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-07.spec.ts:19:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-ca505-e-y-estado-del-tenant-TC-01-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[13/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-08.spec.ts:14:7 › MOD-ORG-TEN-TC-08 | Búsqueda y filtrado de Tenants › Validar búsqueda por nombre en la grilla
+[1A[2K[14/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-09.spec.ts:18:8 › MOD-ORG-TEN-TC-09 | Eliminar Tenant existente › Eliminar tenant por completo – BLOQUEADO: sin botón Eliminar en UI
+[1A[2K[15/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-10.spec.ts:14:7 › MOD-ORG-TEN-TC-10 | Flujo completo Alta y Edición de Info › Crear, consultar y editar información básica
+[1A[2K[16/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-10.spec.ts:14:7 › MOD-ORG-TEN-TC-10 | Flujo completo Alta y Edición de Info › Crear, consultar y editar información básica (retry #1)
+[1A[2K  6) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-10.spec.ts:14:7 › MOD-ORG-TEN-TC-10 | Flujo completo Alta y Edición de Info › Crear, consultar y editar información básica 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-10.spec.ts:18:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-10.spec.ts:18:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-abbe5-y-editar-información-básica-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[17/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-11.spec.ts:14:7 › MOD-ORG-TEN-TC-11 | Flujo completo Alta y Asociación de Sucursal › Navegar a Sucursales desde un tenant nuevo
+[1A[2K[18/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-11.spec.ts:14:7 › MOD-ORG-TEN-TC-11 | Flujo completo Alta y Asociación de Sucursal › Navegar a Sucursales desde un tenant nuevo (retry #1)
+[1A[2K  7) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-11.spec.ts:14:7 › MOD-ORG-TEN-TC-11 | Flujo completo Alta y Asociación de Sucursal › Navegar a Sucursales desde un tenant nuevo 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-11.spec.ts:17:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-11.spec.ts:17:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-a5a06-sales-desde-un-tenant-nuevo-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[19/12] [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-12.spec.ts:14:7 › MOD-ORG-TEN-TC-12 | Flujo completo Alta y Asociación de Tema › Asociar tema a nuevo tenant
+[1A[2K[20/12] (retries) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-12.spec.ts:14:7 › MOD-ORG-TEN-TC-12 | Flujo completo Alta y Asociación de Tema › Asociar tema a nuevo tenant (retry #1)
+[1A[2K  8) [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-12.spec.ts:14:7 › MOD-ORG-TEN-TC-12 | Flujo completo Alta y Asociación de Tema › Asociar tema a nuevo tenant 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |     const dialogAlta = this.page.getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first();
+      84 |     await this.btnNuevoTenant.click();
+    > 85 |     await expect(dialogAlta).toBeVisible({ timeout: 10000 });
+         |                              ^
+      86 |     await this.inputNombre.fill(nombre);
+      87 |
+      88 |     if (cliente) {
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-12.spec.ts:17:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('dialog').filter({ hasText: /crear un nuevo tenant/i }).first()[22m
+
+
+       at ..\pages\PaginaTenants.ts:85
+
+      83 |
+      84 |   async crearTenant(nombre: string, cliente: string = '') {
+    > 85 |     await this.btnNuevoTenant.click();
+         |                              ^
+      86 |     await expect(this.dialogAltaTenant).toBeVisible({ timeout: 10000 });
+      87 |     await this.inputNombre.fill(nombre);
+      88 |
+        at PaginaTenants.crearTenant (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\pages\PaginaTenants.ts:85:30)
+        at c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-12.spec.ts:17:6
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace reports\test-results\e2e-2-organizacion-1-tenan-6a929-Asociar-tema-a-nuevo-tenant-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+No se encontró el directorio de resultados para conversión.
+[1A[2K  7 failed
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-01.spec.ts:14:8 › MOD-ORG-TEN-TC-01 | Alta Exitosa de Tenant Básico › Crear un nuevo tenant básico 
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-03.spec.ts:12:7 › MOD-ORG-TEN-TC-03 | Modificación de Pestaña Info en Tenant › Validar cumplimiento funcional de MOD-ORG-TEN-TC-03 
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-06.spec.ts:14:7 › MOD-ORG-TEN-TC-06 | Intentar crear Tenant duplicado › Validar mensaje de error por duplicado en API y UI 
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-07.spec.ts:14:7 › MOD-ORG-TEN-TC-07 | Modificar Tenant existente › Modificar nombre y estado del tenant TC-01 
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-10.spec.ts:14:7 › MOD-ORG-TEN-TC-10 | Flujo completo Alta y Edición de Info › Crear, consultar y editar información básica 
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-11.spec.ts:14:7 › MOD-ORG-TEN-TC-11 | Flujo completo Alta y Asociación de Sucursal › Navegar a Sucursales desde un tenant nuevo 
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-12.spec.ts:14:7 › MOD-ORG-TEN-TC-12 | Flujo completo Alta y Asociación de Tema › Asociar tema a nuevo tenant 
+  1 flaky
+    [chromium] › tests\e2e\2-organizacion\1-tenants\mod-org-ten-tc-04.spec.ts:12:7 › MOD-ORG-TEN-TC-04 | Alternancia Métodos Pago Inicial (Efectivo y Clover) › Validar cumplimiento funcional de MOD-ORG-TEN-TC-04 
+  1 skipped
+  3 passed (9.8m)

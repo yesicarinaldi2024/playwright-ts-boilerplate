@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Verificar parseo del lado del browser impidiendo NaN.
+ */
 test.describe('MOD-PRE-PPR-TC-02 | Edición Preventiva - Inserción Caractéres Inválidos Letras (Flujo Error)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

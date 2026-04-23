@@ -1,0 +1,26 @@
+Error: Playwright Test did not expect test.describe() to be called here.
+Most common reasons include:
+- You are calling test.describe() in a configuration file.
+- You are calling test.describe() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependencies in your package.json depends on @playwright/test.
+
+   at playwright-ts-boilerplate\tests\e2e\2-organizacion\2-sucursales\mod-org-suc-tc-06.spec.ts:7
+
+   5 |  * ESTABLE: Usa beforeEach/afterEach para login/logout limpio.
+   6 |  */
+>  7 | test.describe('MOD-ORG-SUC-TC-06 | Gestión de Contactos: Alta (Estable)', () => {
+     |      ^
+   8 |
+   9 |   test.beforeEach(async ({ paginaLogin, paginaSucursales }) => {
+  10 |     await paginaLogin.visitarLogin();
+    at TestTypeImpl._currentSuite (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\node_modules\playwright\lib\common\testType.js:75:13)
+    at TestTypeImpl._describe (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\node_modules\playwright\lib\common\testType.js:115:24)
+    at Function.describe (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\node_modules\playwright\lib\transform\transform.js:275:12)
+    at Object.<anonymous> (c:\bo_so\playwright-ts-boilerplate\playwright-ts-boilerplate\tests\e2e\2-organizacion\2-sucursales\mod-org-suc-tc-06.spec.ts:7:6)
+
+Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+
+[1A[2K

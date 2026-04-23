@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: El EventListener reacciona al Canvas principal.
+ */
 test.describe('MOD-MED-ARCH-TC-07 | Interceptación Funcional Drag & Drop', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

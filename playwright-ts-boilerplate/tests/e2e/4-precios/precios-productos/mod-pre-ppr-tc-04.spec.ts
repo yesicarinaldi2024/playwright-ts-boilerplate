@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Combinación límite tolerada de las dependencias.
+ */
 test.describe('MOD-PRE-PPR-TC-04 | Condicionamiento Triple Restrictivo (Tag + Store + Menú)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

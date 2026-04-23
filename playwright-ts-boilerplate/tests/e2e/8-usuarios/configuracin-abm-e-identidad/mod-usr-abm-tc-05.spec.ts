@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-USR-ABM-TC-05 | Petición Reset Contraseña (Reset Password Service Link)', () => {
+/**
+ * Objetivo: Botón Header Activo funcional.
+ */
+test.describe('MOD-USR-ABM-TC-05 | Petición "Reset Contraseña" (Reset Password Service Link)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Aplicar regla diferenciadora de sobrecosto por store.
+ */
 test.describe('MOD-PRE-PPR-TC-03 | Condicionamiento Estricto por Filial Parametrizada (Sucursal)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

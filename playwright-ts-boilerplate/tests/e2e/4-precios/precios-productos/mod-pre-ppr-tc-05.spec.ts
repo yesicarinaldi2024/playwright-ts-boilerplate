@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Promos efímeras de vencimiento.
+ */
 test.describe('MOD-PRE-PPR-TC-05 | Lógica Temporizada - Rango Base con Vigencia Promocional', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

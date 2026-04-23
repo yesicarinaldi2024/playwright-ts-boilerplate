@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-FILT-TC-01', () => {
+/**
+ * Objetivo: Comprobar la ingesta de parámetros estandarizados de calendario en las métricas.
+ */
+test.describe('MOD-DASH-FILT-TC-01 | Comportamiento Global del Rango Predefinido', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

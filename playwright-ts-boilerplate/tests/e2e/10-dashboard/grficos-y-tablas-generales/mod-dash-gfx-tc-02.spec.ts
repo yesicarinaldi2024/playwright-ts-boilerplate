@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-GFX-TC-02', () => {
+/**
+ * Objetivo: Grilla complementaria se hidrata.
+ */
+test.describe('MOD-DASH-GFX-TC-02 | Integridad Componentes de Barras Top Puestos (Rankings)', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

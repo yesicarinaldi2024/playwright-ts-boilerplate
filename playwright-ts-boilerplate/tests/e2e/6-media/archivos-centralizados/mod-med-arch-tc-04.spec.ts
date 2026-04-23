@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Lectura de Hashes UUID para tracking e inyección de datos accesorios.
+ */
 test.describe('MOD-MED-ARCH-TC-04 | Modal Detalle Extenso', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

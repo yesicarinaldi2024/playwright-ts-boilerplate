@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Traspaso manual del URL de asset publico.
+ */
 test.describe('MOD-MED-ARCH-TC-08 | Portapapeles URL Hosting', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Validar reglas de mínimos y máximos para el customizador de Kiosco.
+ */
 test.describe('MOD-CAT-OPC-TC-01 | Alta Agrupada de Modificadores Múltiples (Salsas Extra)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

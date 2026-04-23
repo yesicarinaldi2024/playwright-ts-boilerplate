@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Validar motor de usuarios anclado al auth estricto.
+ */
 test.describe('MOD-USR-ABM-TC-01 | Generación Exitosa Primer Instancia Administrador (Flujo Crítico)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

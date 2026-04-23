@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Corroborar render en Layout Modal de Side Menu con Subtotales financieros validos.
+ */
 test.describe('MOD-OPE-ORD-TC-02 | Despliegue Componente Resumen de Instancias de Venta', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

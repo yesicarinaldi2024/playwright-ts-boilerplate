@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Configuración per-item de la política de ventas a mayoría de edad.
+ */
 test.describe('MOD-CAT-PROD-TC-02 | Producto con Tag +18 (Disclaimer Mandatario)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

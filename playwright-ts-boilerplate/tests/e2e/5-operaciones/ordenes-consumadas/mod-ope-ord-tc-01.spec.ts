@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-OPE-ORD-TC-01 | Aserción Visual Status Color Verde Completada (Semántica Visual)', () => {
+/**
+ * Objetivo: Validar componente pág. 55 indicando etiqueta Verde.
+ */
+test.describe('MOD-OPE-ORD-TC-01 | Aserción Visual Status Color "Verde Completada" (Semántica Visual)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

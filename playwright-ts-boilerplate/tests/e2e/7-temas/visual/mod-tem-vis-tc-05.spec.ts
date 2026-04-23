@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-TEM-VIS-TC-05 | Inyección Asset Modal desde Seleccionar Media', () => {
+/**
+ * Objetivo: Uso de biblioteca de Storage interna frente a Drag and Drop.
+ */
+test.describe('MOD-TEM-VIS-TC-05 | Inyección Asset Modal desde `Seleccionar Media`', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

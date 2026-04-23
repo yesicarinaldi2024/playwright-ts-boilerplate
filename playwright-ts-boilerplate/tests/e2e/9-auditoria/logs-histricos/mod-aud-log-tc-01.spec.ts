@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-AUD-LOG-TC-01 | Render Defensivo Data Table Global (Read First)', () => {
+/**
+ * Objetivo: Panel de lectura pasiva debe ser indestructible con fallos de front.
+ */
+test.describe('MOD-AUD-LOG-TC-01 | Render Defensivo Data Table Global ("Read" First)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

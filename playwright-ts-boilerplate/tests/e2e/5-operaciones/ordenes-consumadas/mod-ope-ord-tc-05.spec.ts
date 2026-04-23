@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Forzado de recursos red sobre Orders List (Pag 55).
+ */
 test.describe('MOD-OPE-ORD-TC-05 | Modificador de Paginación Escalada de Tablas Reactivas', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Proveer existencia comercializable pura.
+ */
 test.describe('MOD-CAT-PROD-TC-01 | Instanciar Producto Standalone Base', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

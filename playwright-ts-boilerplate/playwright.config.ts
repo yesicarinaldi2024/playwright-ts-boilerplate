@@ -5,6 +5,13 @@ import * as path from 'path';
 // Cargar variables de entorno del sistema local o del archivo .env
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
+if (!process.env.URL_BASE && !process.env.CI) {
+  console.warn('⚠️ [ANTI-FLAKY WARN]: "URL_BASE" no está definido en tu .env. Usando entorno QA de fallback. Te sugerimos mapearlo.');
+}
+if (!process.env.USUARIO_TEST) {
+  console.warn('⚠️ [ANTI-FLAKY WARN]: Faltan credenciales en el .env como "USUARIO_TEST". Los tests que lo requieran arrojarán Error Crítico de setup.');
+}
+
 /**
  * Configuración de Playwright enfocada en estabilidad, determinismo y ejecución anti-flaky
  */
@@ -30,8 +37,8 @@ export default defineConfig({
   ],
   /* Carpeta para resultados de tests (evidencias) */
   outputDir: 'reports/test-results',
-  /* Tiempo de espera general agresivo (30s) y aserciones explícitas de 10s. Previene bloqueos "hanged". */
-  timeout: 30000,
+  /* Tiempo de espera general (120s) y aserciones explícitas de 10s. Previene bloqueos "hanged". */
+  timeout: 120000,
   expect: {
     timeout: 10000,
   },

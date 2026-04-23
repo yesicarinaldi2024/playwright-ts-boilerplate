@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Validar inyección del contenedor "Precio Nocturno"  u otros.
+ */
 test.describe('MOD-PRE-TIP-TC-02 | Instanciación Exitosa de Nueva Modalidad Venta', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

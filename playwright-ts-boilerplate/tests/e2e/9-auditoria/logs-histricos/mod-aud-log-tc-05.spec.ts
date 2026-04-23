@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Trazabilidad profunda Endpoint Microservico.
+ */
 test.describe('MOD-AUD-LOG-TC-05 | Inyección Lateral Detalle JSON Raw Information', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

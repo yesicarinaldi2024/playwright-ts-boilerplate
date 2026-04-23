@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Limpieza visual de un contenedor.
+ */
 test.describe('MOD-TEM-VIS-TC-04 | Desvincular Banner y Elementos Adyacentes (Remove Media)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

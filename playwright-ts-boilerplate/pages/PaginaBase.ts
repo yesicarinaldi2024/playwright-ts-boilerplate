@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { Page, expect } from '@playwright/test';
 
 /**
  * Clase Base de la cual heredan todos los Page Objects.
@@ -18,14 +18,13 @@ export abstract class PaginaBase {
    */
   async visitar(ruta: string) {
     await this.page.goto(ruta, { waitUntil: 'domcontentloaded' });
+    // Asegurar que la página está lista
+    await this.page.waitForLoadState('networkidle');
   }
 
-  /**
-   * Verifica que un texto sea visible en la página. Útil para breadcrumbs o títulos de sección.
-   */
   async verificarTextoVisible(texto: string) {
-    await this.page.waitForLoadState('networkidle');
-    await this.page.locator(`text=${texto}`).first().waitFor({ state: 'visible', timeout: 15000 });
+    // Playwright auto-wait gestiona la aparición sin bloquearse tontamente con networkidle
+    await expect(this.page.getByText(new RegExp(texto, 'i')).first()).toBeVisible({ timeout: 15000 });
   }
 
   /**

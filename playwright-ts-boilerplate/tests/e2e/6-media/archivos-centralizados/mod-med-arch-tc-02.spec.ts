@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Evadir agotamiento de storage innecesario.
+ */
 test.describe('MOD-MED-ARCH-TC-02 | Falla Control Límite de Peso (Over 20MB)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

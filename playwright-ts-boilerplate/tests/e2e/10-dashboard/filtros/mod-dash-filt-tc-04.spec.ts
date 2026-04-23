@@ -1,7 +1,10 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-FILT-TC-04', () => {
-  test.beforeEach(async ({ paginaLogin }) => {
+/**
+ * Objetivo: Vuelta inmediata a valor primigenio sin reseteo duro por F5.
+ */
+test.describe(`MOD-DASH-FILT-TC-04 | Funcionalidad Botón 'Limpiar Todos' (Reset)`, () => {
+  test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();
   });

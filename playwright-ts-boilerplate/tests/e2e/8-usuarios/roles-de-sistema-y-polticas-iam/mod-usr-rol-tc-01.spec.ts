@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Crear el andamiaje paramétrico del acceso.
+ */
 test.describe('MOD-USR-ROL-TC-01 | Alta Dinámica Lector Simplificado (Read-Only IAM Rule)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

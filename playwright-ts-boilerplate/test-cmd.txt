@@ -1,0 +1,5 @@
+
+Running 2 tests using 2 workers
+
+  x  1 [chromium] › tests\e2e\1-acceso\login\mod-acceso-log-tc-01.spec.ts:8:7 › MOD-ACCESO-LOG-TC-01 › Ingreso exitoso (28ms)
+  x  3 [chromium] › tests\e2e\1-acceso\login\mod-acceso-log-tc-01.spec.ts:8:7 › MOD-ACCESO-LOG-TC-01 › Ingreso exitoso (retry #1) (43ms)

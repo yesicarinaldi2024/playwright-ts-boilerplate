@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Auditoría individualizada por sujeto peligro.
+ */
 test.describe('MOD-AUD-LOG-TC-09 | Identificación Cruzada Específica de Actor (Búsqueda Email Parametrizada)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

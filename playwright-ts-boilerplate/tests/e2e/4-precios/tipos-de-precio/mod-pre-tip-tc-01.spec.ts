@@ -1,5 +1,8 @@
 import { test, expect } from '../../../fixtures/test-base';
-test.describe('MOD-PRE-TIP-TC-01 | Falla forzada en eliminación de Default Price Type', () => {
+/**
+ * Objetivo: Seguridad arquitectónica: el manual asegura que un precio primitivo anclado no puede morir ("Una vez creado, el primer precio -Default- no puede eliminarse").
+ */
+test.describe('MOD-PRE-TIP-TC-01 | Falla forzada en eliminación de "Default Price Type"', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();

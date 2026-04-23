@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Definición de rentabilidad base para un SKU.
+ */
 test.describe('MOD-PRE-PPR-TC-01 | Alta Dinámica Referencial Simple (Precio Constante)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

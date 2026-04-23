@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Obtención de reportes técnicos JSON.
+ */
 test.describe('MOD-OPE-SES-TC-04 | Extracción Local Side Drawer de Data Transaccional', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

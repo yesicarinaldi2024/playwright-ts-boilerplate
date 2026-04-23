@@ -9,7 +9,7 @@ import ffmpeg from 'fluent-ffmpeg';
  * al formato .mp4 solicitado por el usuario.
  */
 async function globalTeardown(config: FullConfig) {
-  const resultsDir = path.resolve(config.rootDir, '../reports/test-results');
+  const resultsDir = path.resolve(config.rootDir, 'reports/test-results');
 
   if (!fs.existsSync(resultsDir)) {
     console.log('No se encontró el directorio de resultados para conversión.');
@@ -32,23 +32,23 @@ async function globalTeardown(config: FullConfig) {
         await convertFiles(filePath);
       } else if (file.endsWith('.webm')) {
         const outputFilePath = filePath.replace('.webm', '.mp4');
-        
+
         console.log(`Convirtiendo evidencia: ${file} -> .mp4`);
-        
-        await new Promise((resolve, reject) => {
+
+        await new Promise((resolve) => {
           ffmpeg(filePath)
             .output(outputFilePath)
             .videoCodec('libx264')
             .on('end', () => {
               // Eliminar el archivo original .webm para dejar solo la evidencia solicitada
-              try {
-                fs.unlinkSync(filePath);
-              } catch (e) {}
+              // try {
+              //   fs.unlinkSync(filePath);
+              // } catch (e) {}
               resolve(true);
             })
             .on('error', (err) => {
               console.error(`Error convirtiendo ${file}:`, err);
-              reject(err);
+              resolve(true);
             })
             .run();
         });

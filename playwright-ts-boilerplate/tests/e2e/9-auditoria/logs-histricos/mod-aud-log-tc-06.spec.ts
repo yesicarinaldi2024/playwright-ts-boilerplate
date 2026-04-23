@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Destuir filtros aplicados y reset.
+ */
 test.describe('MOD-AUD-LOG-TC-06 | Funcionalidad Botón Restablecer Limpiar Base', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

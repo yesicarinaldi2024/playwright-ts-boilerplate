@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-FILT-TC-05', () => {
+/**
+ * Objetivo: Refetching programado por UI.
+ */
+test.describe('MOD-DASH-FILT-TC-05 | Visor de Auto-Recarga Automática (Auto-Refresh)', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

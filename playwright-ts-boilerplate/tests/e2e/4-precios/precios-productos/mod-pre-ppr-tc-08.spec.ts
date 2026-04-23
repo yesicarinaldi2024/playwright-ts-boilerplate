@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Proceso irreversible de remoción final de Costes.
+ */
 test.describe('MOD-PRE-PPR-TC-08 | Baja Eliminatoria Física Estándar y Warning Prompter', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

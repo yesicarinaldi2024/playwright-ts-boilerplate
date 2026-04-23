@@ -1,7 +1,10 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-GFX-TC-01', () => {
-  test.beforeEach(async ({ paginaLogin }) => {
+/**
+ * Objetivo: Comprobación lógica que no recae en aserción puramente pixel a pixel, comprobando existencia in-node.
+ */
+test.describe(`MOD-DASH-GFX-TC-01 | Presentación de Gráfico 'Ventas por Hora' (SVG/Canvas)`, () => {
+  test.beforeEach(async ({ paginaLogin, page }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();
   });

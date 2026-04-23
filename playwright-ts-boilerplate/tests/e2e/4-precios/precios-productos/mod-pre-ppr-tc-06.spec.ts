@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Las Promos de 'Pintas hasta x hora' son vitales de registrar.
+ */
 test.describe('MOD-PRE-PPR-TC-06 | Vigencia Módulo Horaria con Alta Precisión Analógica', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

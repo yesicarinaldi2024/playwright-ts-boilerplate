@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Las sub-iconografías son frágiles si se suben HD jpgs pesados.
+ */
 test.describe('MOD-TEM-ASIG-TC-05 | Adoctrinación Formato Carrito SVG Limitante (Manejo Base Vectorial)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

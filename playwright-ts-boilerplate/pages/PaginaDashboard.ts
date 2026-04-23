@@ -8,25 +8,23 @@ export class PaginaDashboard extends PaginaBase {
 
   constructor(page: Page) {
     super(page);
-    this.txtVentasNetas = page.locator('text=/ventas.*netas/i').first();
-    this.btnAplicarFiltros = page.getByRole('button', { name: /aplicar/i }).first();
-    this.btnLimpiarTodos = page.getByRole('button', { name: /limpiar/i }).first();
+    this.txtVentasNetas = page.getByRole('heading', { name: /ventas netas/i }).or(page.getByText(/ventas netas/i));
+    this.btnAplicarFiltros = page.getByRole('button', { name: /aplicar/i });
+    this.btnLimpiarTodos = page.getByRole('button', { name: /limpiar/i });
   }
 
   async elegirOpcionSelectGenerico(placeholder: string, opcion: string) {
-     // Heurística de un select dropdown
-     const selectCombo = this.page.locator(`text=/${placeholder}/i`).first();
-     if(await selectCombo.isVisible().catch(()=>false)){
-         await selectCombo.click();
-         await this.page.locator(`text=${opcion}`).first().click();
-     }
+     const selectCombo = this.page.getByRole('combobox', { name: new RegExp(placeholder, 'i') }).or(this.page.getByLabel(new RegExp(placeholder, 'i')));
+     await selectCombo.first().click();
+     await this.page.getByRole('option', { name: opcion, exact: false }).or(this.page.locator(`text=${opcion}`)).first().click();
   }
 
   async aplicar() {
-     if(await this.btnAplicarFiltros.isVisible().catch(()=>false)) await this.btnAplicarFiltros.click();
+     await this.btnAplicarFiltros.first().click();
   }
 
   async verificarVisibilidadDatoBasico(datoStr: string) {
-     await expect(this.page.locator(`text=/${datoStr}/i`).first()).toBeVisible({ timeout: 15000 }).catch(() => null); // Silenced heuristically
+     // IMPORTANTE: Eliminados los .catch(() => null) que provocaban Falsos Positivos de validación visual.
+     await expect(this.page.getByText(new RegExp(datoStr, 'i')).first()).toBeVisible({ timeout: 15000 });
   }
 }

@@ -1,6 +1,9 @@
 import { test, expect } from '../../../fixtures/test-base';
 
-test.describe('MOD-DASH-FILT-TC-06', () => {
+/**
+ * Objetivo: El rol Super Admin muta todo el canvas base al cambiar globalmente.
+ */
+test.describe('MOD-DASH-FILT-TC-06 | Multi-Tenant Selection desde Switcher Superior Admins', () => {
   test.beforeEach(async ({ paginaLogin }) => {
     await paginaLogin.visitarLogin();
     await paginaLogin.autenticar();

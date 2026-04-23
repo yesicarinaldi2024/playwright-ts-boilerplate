@@ -1,4 +1,7 @@
 import { test, expect } from '../../../fixtures/test-base';
+/**
+ * Objetivo: Adquisición de recurso imagen base.
+ */
 test.describe('MOD-MED-ARCH-TC-01 | Alta Integra Raster (.JPG)', () => {
 
   test.beforeEach(async ({ paginaLogin, page }) => {

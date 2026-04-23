@@ -10,33 +10,59 @@ export class PaginaLogin extends PaginaBase {
 
   constructor(page: Page) {
     super(page);
-    this.inputUsuario = page.locator('#username, [name="username"], [data-testid="username"]').first();
-    this.inputClave = page.locator('#password, [name="password"], [data-testid="password"]').first();
-    this.botonIngresar = page.locator('#kc-login, [type="submit"], button:has-text("Iniciar"), button:has-text("Sign In")').first(); 
-    this.mensajeError = page.locator('#input-error, .alert-error, #kc-error-message, [data-testid="error"]').first();
+    this.inputUsuario = page.locator('#username');
+    this.inputClave = page.locator('#password');
+    this.botonIngresar = page.locator('#kc-login');
+    this.mensajeError = page.locator('#input-error, .so-input-error');
   }
 
   async visitarLogin() {
-    await this.visitar(process.env.URL_BASE || 'https://bo-dexorder-qa.dexmanager.com/login');
+    // Si baseURL ya está en el config, usar ruta relativa.
+    const url = process.env.URL_BASE ? `${process.env.URL_BASE}/login` : '/login';
+    await this.visitar(url);
+    // Esperar a que los campos de login estén visibles
+    await expect(this.inputUsuario).toBeVisible({ timeout: 15000 });
   }
 
   async iniciarSesionUsuario(usuario: string, clave: string) {
+    // Esperar a que los campos estén visibles y habilitados
+    await expect(this.inputUsuario).toBeVisible({ timeout: 15000 });
+    await expect(this.inputUsuario).toBeEnabled({ timeout: 15000 });
+    await expect(this.inputClave).toBeVisible({ timeout: 15000 });
+    await expect(this.inputClave).toBeEnabled({ timeout: 15000 });
+
+    // Llenar los campos
     await this.inputUsuario.fill(usuario);
+    await this.page.waitForTimeout(400);
     await this.inputClave.fill(clave);
+    await this.page.waitForTimeout(400);
+
+    // Hacer click en el botón
+    await expect(this.botonIngresar).toBeVisible({ timeout: 15000 });
+    await expect(this.botonIngresar).toBeEnabled({ timeout: 15000 });
     await this.botonIngresar.click();
+
+    // Esperar a que se complete la autenticación
     await WaitHelper.esperarCargaDOMBasica(this.page);
+    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForTimeout(600);
   }
 
   async ingresarComoAdministrador() {
-    await this.iniciarSesionUsuario(process.env.USUARIO_TEST || 'test@test.com', process.env.PASSWORD_TEST || 'testpass123!');
+    const user = process.env.USUARIO_TEST;
+    const pass = process.env.PASSWORD_TEST;
+    if (!user || !pass) {
+      throw new Error('Faltan credenciales seguras. Inyecta USUARIO_TEST y PASSWORD_TEST en tu archivo .env');
+    }
+    await this.iniciarSesionUsuario(user, pass);
   }
 
   // Alias legacy para compatibilidad con autogenerador
   async autenticar() {
-      await this.ingresarComoAdministrador();
+    await this.ingresarComoAdministrador();
   }
 
   async comprobarAlertaCredencialesInvalidas() {
-    await expect(this.mensajeError).toBeVisible({ timeout: 5000 });
+    await expect(this.mensajeError.first()).toBeVisible({ timeout: 5000 });
   }
 }
